@@ -1,8 +1,7 @@
-// src/Navbar.js
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
-
+import logo from './Image/Logo.png';
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -12,8 +11,14 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-container">
-        <div className="navbar-logo">HR Transport</div>
+      <div className="navbar-container"> 
+        <div className="navbar-logo">
+         
+          <img src={logo} alt="Logo" className="logo-Image" />
+          <span className="clinic-name">Dr S K Sreekanth Dental Clinic</span>
+         
+        </div>
+       
         
         {/* Hamburger Icon */}
         <button className="hamburger" onClick={toggleMenu}>

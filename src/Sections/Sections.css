@@ -1,165 +1,277 @@
+/* General Styling */
 .home-section {
-  margin-top: 0px;
-  color: white;
-  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure the section takes up the full viewport height */
+  padding-bottom: 0;
+  text-align: center; /* Center text horizontally */
 }
 
-.home-section h1 {
+/* Wrapper for content with spacing */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ensure content is centered horizontally */
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+/* Keyframe animation for hero section */
+@keyframes pro2__animate {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+/* Hero section styling */
+.hero {
+  margin-top: 0; /* Removed extra margin to keep the image centered */
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  background-color: grey;
+  object-fit: cover;
+  overflow: hidden;
+  animation: pro2__animate 5s infinite ease-in-out;
+  width: 100%; /* Make sure the image doesn't overflow */
+  max-width: 400px; /* Limit the image size */
+}
+
+/* Wrapper for text content */
+.text-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Ensure text is centered */
+  gap: 15px;
+  text-align: center; /* Center text inside the wrapper */
+}
+
+/* Styling for large headings */
+.text-wrapper h1 {
   font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Paragraph text */
+.text-wrapper p {
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-.home-section p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
-
+/* Call-to-action button */
 .cta-button {
-  display: block; /* Ensures the button takes up space as a block element */
-  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 15px 30px;
   font-size: 1.2rem;
-  background-color: rgb(38, 210, 38);
+  background-color: rgb(138, 134, 134);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s;
-  text-align: center;
 }
 
 .cta-button:hover {
-  background-color: rgb(25, 80, 25);
+  background-color: rgb(56, 46, 46);
 }
 
+/* WhatsApp icon styling */
 .whatsapp-icon {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-
-
 }
 
-.about-section {
-  color: white;
-}
-
+/* Service Section */
 .service-section {
-  margin-top: 0px;
-  color: white;
-  margin-bottom: 10px;
+  padding: 50px 20px;
+  text-align: center;
+
 }
 
-.contact {
-  color: white;
+.sc {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-.email {
-  color: black;
-}
-
-.ab, .sc, .co {
-  color: yellow;
-}
-
-.container {
+/* Container for Service Boxes */
+.service-section .box-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-
+.about-text{
+  line-height: 1.5;
+}
+/* Individual Service Box Style */
 .one {
-  margin: 10px;
-  background-color: #030303;
-  border: 2px solid black;
+  background-color: rgb(138, 134, 134);
+  border: 2px solid rgb(128, 126, 126);
   padding: 20px;
   border-radius: 30px;
-  display: inline-block;
-  box-sizing: border-box;
-  height: 300px;
-  width: 250px;
+  height: 200px;
+  width: calc((100% / 4) - 20px); /* First row will have 4 boxes */
   font-size: x-large;
   font-weight: bolder;
-  flex-basis: 30%;
-  text-align: center;
-}
-
-.one img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.about, .val {
-  margin: 10px;
-  background-color: #4f4d4d;
-  border: 2px solid black;
-  padding: 20px;
-  border-radius: 30px;
- 
-  box-sizing: border-box;
-  height: 350px;
-  width: 700px;
-  font-size: x-large;
-  font-weight: bolder;
-  flex-basis: 30%;
-  text-align: center;
-  display: block;
+  color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures "Click More..." is at the bottom */
   align-items: center;
-  margin-left: 350px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(85, 79, 79, 0.2);
+  box-sizing: border-box;
+  transition: transform 0.3s;
+font-family: 'Courier New', Courier, monospace;
 }
 
-.about:hover {
-  background-color: #282727;
+/* Hover effect for service boxes */
+.one:hover {
+  transform: translateY(-10px);
 }
 
-.val:hover, .va:hover {
-  background-color: #282727;
+/* Responsive adjustments for service section */
+@media (max-width: 1200px) {
+  .one {
+    width: calc((100% / 3) - 20px); /* Second row with 3 boxes */
+  }
 }
 
-/* Responsive styles for Sections.css */
 @media (max-width: 768px) {
-  .home-section h1 {
-    font-size: 2rem;
-  }
-
-  .home-section p {
-    font-size: 1rem;
-  }
-
-  .cta-button {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-  }
-
-  .about-section, .service-section, .contact {
-    padding: 10px;
-    text-align: center;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .one, .about, .val, .va {
-    width: 90%;
-    height: auto;
-    margin: 10px;
-    padding: 15px;
+  .one {
+    width: calc((100% / 2) - 20px); /* Adjusts to 2 boxes per row for smaller screens */
   }
 }
 
 @media (max-width: 576px) {
-  .one, .about, .val, .va {
+  .one {
+    width: 100%; /* Adjust to 1 box per row on small screens */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
     width: 100%;
-    padding: 10px;
+    margin-left: -20px;
+  }
+
+  .text-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .text-wrapper p {
+    font-size: 1rem;
   }
 
   .cta-button {
     font-size: 1rem;
     padding: 10px;
+  }
+  .service-section {
+    margin-top: 100px;
+    
+  }
+}
+
+/* Global HTML and body styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: hidden;
+}
+
+/* Small screen adjustments */
+@media (max-width: 576px) {
+  .hero {
+    max-width: 100%;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .service-section {
+    margin-top: 100px;
+    
+  }
+}
+
+/* Main container for text and image */
+.about-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Left-side image container */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Right-side text container */
+.about-text {
+  flex: 1;
+  margin-left: 20px;
+  text-align: justify;
+}
+
+/* About Us section heading */
+.ab {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments for About section */
+@media (max-width: 768px) {
+  .about-content-wrapper {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .about-image {
+    flex: unset;
+    width: 100%;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+  .service-section {
+    margin-top: 100px;
+    
   }
 }

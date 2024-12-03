@@ -1,10 +1,45 @@
 .footer {
-    background-color: black;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 1.4rem;
-    font: bold;
+  background-color: rgb(227, 226, 226);
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold; /* Fixed typo, replaced `font: bold` with `font-weight: bold` */
+}
+
+/* Ensure .map aligns properly on smaller screens */
+.map {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center;
+  margin-left: 0; /* Reset margin to avoid fixed spacing */
+  margin-top: 10px; /* Optional: Add spacing above for better layout */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+      font-size: 1.2rem; /* Slightly smaller font size for compact screens */
+      padding: 15px; /* Reduce padding for smaller screens */
   }
-  
+
+  .map {
+      flex-direction: column; /* Stack content vertically */
+      margin-left: 0; /* Remove fixed margin */
+      margin-top: 15px; /* Add a bit of spacing between elements */
+  }
+}
+
+/* Responsive design for very small screens (mobile phones) */
+@media (max-width: 480px) {
+  .footer {
+      font-size: 1rem; /* Smaller font size for extra small screens */
+      padding: 10px; /* Further reduce padding */
+  }
+
+  .map img {
+      width: 16px; /* Adjust logo size for smaller screens */
+      height: 16px;
+  }
+}
