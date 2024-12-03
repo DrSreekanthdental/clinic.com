@@ -23,14 +23,14 @@ function ServiceSection() {
 
   return (
     <section id="service" className="section service-section">
-      <motion.h1
+      <h1
         className="sc"
         initial="initial"
         whileInView="animate"
         variants={textVariants}
       >
         Our Services
-      </motion.h1>
+      </h1>
 
       <motion.div initial="initial" whileInView="animate" variants={textVariants} className="box-container">
         {services.map((service) => (

@@ -1,5 +1,6 @@
 /* General Styling */
 .home-section {
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +35,7 @@
 
 /* Hero section styling */
 .hero {
-  margin-top: 0; /* Removed extra margin to keep the image centered */
+ 
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   background-color: grey;
   object-fit: cover;
