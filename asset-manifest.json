@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/clinic.com/static/css/main.b4b8d845.css",
+    "main.js": "/clinic.com/static/js/main.b3f03b42.js",
+    "static/js/453.029be889.chunk.js": "/clinic.com/static/js/453.029be889.chunk.js",
+    "static/media/Sreekanth’s Dental clinic.png": "/clinic.com/static/media/Sreekanth’s Dental clinic.cc337bf27abb26cd520a.png",
+    "static/media/Appa4.png": "/clinic.com/static/media/Appa4.f28980a9c9d945d8ffe0.png",
+    "static/media/Clinic1.jpg": "/clinic.com/static/media/Clinic1.328a3aadf7d46d00a3f8.jpg",
+    "static/media/google-maps-logo.png": "/clinic.com/static/media/google-maps-logo.b1012fd4d40754a34df8.png",
+    "static/media/Clinic2.jpg": "/clinic.com/static/media/Clinic2.bc938470a3e8b901ca63.jpg",
+    "static/media/Clinic.jpg": "/clinic.com/static/media/Clinic.7a0dc61871cb5c3931f7.jpg",
+    "static/media/missing tooth.png": "/clinic.com/static/media/missing tooth.9eac9b3fde004bc97f6c.png",
+    "static/media/Logo.png": "/clinic.com/static/media/Logo.da7fad43e690abd5adbb.png",
+    "static/media/S41.jpg": "/clinic.com/static/media/S41.077826fe68d2368731a0.jpg",
+    "static/media/S71.jpg": "/clinic.com/static/media/S71.3b08770148956d53ba28.jpg",
+    "static/media/S65.jpeg": "/clinic.com/static/media/S65.507e1fba933f0d388d81.jpeg",
+    "static/media/S66.jpg": "/clinic.com/static/media/S66.7bc4a0b72dd8b770010c.jpg",
+    "static/media/Aesthetic gum surgery.jpg": "/clinic.com/static/media/Aesthetic gum surgery.b30e195e7aca2cfdab9c.jpg",
+    "static/media/S64.jpg": "/clinic.com/static/media/S64.b345b0a7e210cb617403.jpg",
+    "static/media/s32.jpg": "/clinic.com/static/media/s32.902e5b4ffe5fd17a7df2.jpg",
+    "static/media/s31.jpg": "/clinic.com/static/media/s31.60eebb810752fa0b81bf.jpg",
+    "static/media/S42.jpg": "/clinic.com/static/media/S42.0cb311b52abf871ad612.jpg",
+    "static/media/Gum health.jpg": "/clinic.com/static/media/Gum health.8581045ff7f53368e616.jpg",
+    "static/media/S63.jpg": "/clinic.com/static/media/S63.64f5c361802c002b29db.jpg",
+    "static/media/s3.jpg": "/clinic.com/static/media/s3.fc8f5e3ec93bdb247f8f.jpg",
+    "static/media/rct-2.jpg": "/clinic.com/static/media/rct-2.d594c78e2c44e494fdb2.jpg",
+    "static/media/Steps.jpg": "/clinic.com/static/media/Steps.c2d520f4309a6d029d6e.jpg",
+    "static/media/pulp exposure.jpg": "/clinic.com/static/media/pulp exposure.5123da36b77dff942900.jpg",
+    "static/media/S62.jpg": "/clinic.com/static/media/S62.faa28cae32861efc1487.jpg",
+    "index.html": "/clinic.com/index.html",
+    "main.b4b8d845.css.map": "/clinic.com/static/css/main.b4b8d845.css.map",
+    "main.b3f03b42.js.map": "/clinic.com/static/js/main.b3f03b42.js.map",
+    "453.029be889.chunk.js.map": "/clinic.com/static/js/453.029be889.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4b8d845.css",
+    "static/js/main.b3f03b42.js"
+  ]
+}
